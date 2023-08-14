@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://chrisbadillo.me/ontologies/ontology4/"
+     xml:base="http://chrisbadillo.me/ontologies/ontology4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology4="http://chrisbadillo.me/ontologies/ontology4#">
+    <owl:Ontology rdf:about="http://chrisbadillo.me/ontologies/ontology4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#CatLiker -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/ontology4#CatLiker">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Person"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Cat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#DoesNotEat -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/ontology4#DoesNotEat">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#EatsOnly -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/ontology4#EatsOnly">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Sheep"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Grass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#HasPet -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/ontology4#HasPet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Person"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#IsAdult -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/ontology4#IsAdult">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#IsMale -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/ontology4#IsMale">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#IsVegetarian -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/ontology4#IsVegetarian">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Animal -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Cat -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/ontology4#Cat">
+        <rdfs:subClassOf rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Cow -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/ontology4#Cow">
+        <rdfs:subClassOf rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Grass -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/ontology4#Grass"/>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Man -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/ontology4#Man">
+        <rdfs:subClassOf rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Person -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/ontology4#Person">
+        <rdfs:subClassOf rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Sheep -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/ontology4#Sheep">
+        <rdfs:subClassOf rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#A_Man -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/ontology4#A_Man">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Man"/>
+        <ontology4:IsAdult rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology4:IsAdult>
+        <ontology4:IsMale rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology4:IsMale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#AnAnimal -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/ontology4#AnAnimal">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Animal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Cowy -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/ontology4#Cowy">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Cow"/>
+        <ontology4:DoesNotEat rdf:resource="http://chrisbadillo.me/ontologies/ontology4#AnAnimal"/>
+        <ontology4:IsVegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology4:IsVegetarian>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Fred -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/ontology4#Fred">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Person"/>
+        <ontology4:CatLiker rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Tibbs"/>
+        <ontology4:HasPet rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Tibbs"/>
+        <ontology4:IsMale rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology4:IsMale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#GrassFood -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/ontology4#GrassFood">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Grass"/>
+        <ontology4:EatsOnly rdf:resource="http://chrisbadillo.me/ontologies/ontology4#GrassFood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Sheepy -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/ontology4#Sheepy">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Sheep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/ontology4#Tibbs -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/ontology4#Tibbs">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/ontology4#Cat"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

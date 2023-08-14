@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://chrisbadillo.me/ontologies/geografia.owl#"
+     xml:base="http://chrisbadillo.me/ontologies/geografia.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:geografia="http://chrisbadillo.me/ontologies/geografia.owl#">
+    <owl:Ontology rdf:about="http://chrisbadillo.me/ontologies/geografia.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#CiudadPerteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#CiudadPerteneceA">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Ciudad"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#EsCapitalDe -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#EsCapitalDe">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Capital"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#EstadoPerteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#EstadoPerteneceA">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#HaceFronteraCon -->
+
+    <owl:ObjectProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#HaceFronteraCon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+        <rdfs:range rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#NombreCiudad -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#NombreCiudad">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Ciudad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#NombreEstado -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#NombreEstado">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#NombrePais -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#NombrePais">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#NumeroDeCiudades -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#NumeroDeCiudades">
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#NumeroDeEstados -->
+
+    <owl:DatatypeProperty rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#NumeroDeEstados">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#Capital -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#Capital">
+        <rdfs:subClassOf rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Ciudad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#Ciudad -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#Ciudad"/>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#Estado -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#Pais -->
+
+    <owl:Class rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#CDMX -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#CDMX">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+        <NombreEstado>CDMX</NombreEstado>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#CDMX"/>
+        <owl:assertionProperty rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#EsCapitalDe"/>
+        <owl:targetIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Mexico"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#CDMX"/>
+        <owl:assertionProperty rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#EstadoPerteneceA"/>
+        <owl:targetIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Mexico"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#EstadoDeMexico -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#EstadoDeMexico">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Estado"/>
+        <NombreEstado>EstadoDeMexico</NombreEstado>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#EstadoDeMexico"/>
+        <owl:assertionProperty rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#EstadoPerteneceA"/>
+        <owl:targetIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Mexico"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#Guatemala -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#Guatemala">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+        <NombrePais>Guatemala</NombrePais>
+        <NumeroDeEstados rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</NumeroDeEstados>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Guatemala"/>
+        <owl:assertionProperty rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#HaceFronteraCon"/>
+        <owl:targetIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Mexico"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#Mexico -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#Mexico">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Pais"/>
+        <NombrePais>México</NombrePais>
+        <NumeroDeEstados rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</NumeroDeEstados>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Mexico"/>
+        <owl:assertionProperty rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#HaceFronteraCon"/>
+        <owl:targetIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Guatemala"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://chrisbadillo.me/ontologies/geografia.owl#Toluca -->
+
+    <owl:NamedIndividual rdf:about="http://chrisbadillo.me/ontologies/geografia.owl#Toluca">
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Capital"/>
+        <rdf:type rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Ciudad"/>
+        <NombreCiudad>Toluca</NombreCiudad>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Toluca"/>
+        <owl:assertionProperty rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#CiudadPerteneceA"/>
+        <owl:targetIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#EstadoDeMexico"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#Toluca"/>
+        <owl:assertionProperty rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#EsCapitalDe"/>
+        <owl:targetIndividual rdf:resource="http://chrisbadillo.me/ontologies/geografia.owl#EstadoDeMexico"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
